@@ -47,13 +47,15 @@ def set_custom_axes_style(ax):
     ax.spines['right'].set_linewidth(1)
 
 # Streamlit interface
-st.title("Cosmological Data Analysis App")
+st.set_page_config(page_title="Non-parametric Calculation App for FRB", layout="wide")
+st.title("🌌 Non-parametric Calculation App for FRB")
 
 # Define input fields
+st.sidebar.header("Input Parameters")
 OM = st.sidebar.number_input("OM", value=OM_default)
 OA = st.sidebar.number_input("OA", value=OA_default)
 H0 = st.sidebar.number_input("H0", value=H0_default)
-c = st.sidebar.number_input("Speed of Light", value=c_default)
+c = st.sidebar.number_input("Speed of Light (m/s)", value=c_default)
 Flim = st.sidebar.number_input("Flim", value=Flim_default)
 Ndata = st.sidebar.number_input("Ndata", value=Ndata_default)
 kstart = st.sidebar.number_input("kstart", value=kstart_default)
@@ -154,6 +156,8 @@ if uploaded_file:
         T_fix = (TAU1[i+1]+TAU1[i])/2
         if TAU1[i+1]*TAU1[i] < 0:
             break
+    
+    st.subheader("K-TAU Results")
     st.write(f"K_fix: {K_fix}")
     st.write(f"T_fix: {T_fix}")
 
