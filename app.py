@@ -47,7 +47,6 @@ def set_custom_axes_style(ax):
     ax.spines['right'].set_linewidth(1)
 
 # Streamlit interface
-st.set_page_config(page_title="Non-parametric Calculation App for FRB", layout="wide")
 st.title("🌌 Non-parametric Calculation App for FRB")
 
 # Define input fields
