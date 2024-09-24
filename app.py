@@ -69,7 +69,7 @@ if uploaded_file:
     Eiso = data[:, 1]
 
     # Plot the Eiso vs z graph
-    fig, ax = plt.subplots(figsize=(3.125, 2.5), dpi=300)
+    fig, ax = plt.subplots(figsize=(6.25, 5), dpi=300)
     axp = plt.gca()
     set_custom_axes_style(axp)
     ax.set_ylabel("$\mathregular{E_{iso}}$(erg)", fontsize=8)
@@ -141,7 +141,7 @@ if uploaded_file:
     results = Parallel(n_jobs=-1)(delayed(process_k)(K) for K in np.linspace(kstart, kend, 30))
     K1, TAU1 = zip(*results)
 
-    fig, ax1 = plt.subplots(figsize=(3.125, 2.5), dpi=300)
+    fig, ax1 = plt.subplots(figsize=(6.25, 5), dpi=300)
     axp = plt.gca()
     set_custom_axes_style(axp)
     ax1.set_ylabel("\u03C4", fontsize=8)
@@ -220,7 +220,7 @@ if uploaded_file:
     sorted_E = np.sort(E)
     sorted_PsiE = np.array(PsiE)[np.argsort(E)]
 
-    plt.figure(figsize=(3.125, 2.5), dpi=300)
+    plt.figure(figsize=(6.25, 5), dpi=300)
     axp = plt.gca()
     set_custom_axes_style(axp)
     plt.ylabel("Cumulative E", fontsize=8)
@@ -234,7 +234,7 @@ if uploaded_file:
     sorted_Z = np.sort(Z)
     sorted_Phiz = np.array(Phiz)[np.argsort(Z)]
 
-    plt.figure(figsize=(3.125, 2.5), dpi=300)
+    plt.figure(figsize=(6.25, 5), dpi=300)
     axp = plt.gca()
     set_custom_axes_style(axp)
     plt.ylabel("Cumulative redshift", fontsize=8)
@@ -277,7 +277,7 @@ if uploaded_file:
     plt.clf()
 
     
-    plt.figure(figsize=(3.125, 2.5), dpi=300)
+    plt.figure(figsize=(6.25, 5), dpi=300)
     axp = plt.gca()
     set_custom_axes_style(axp)  
     plt.ylabel("Rate", fontsize=8)
@@ -303,7 +303,7 @@ if uploaded_file:
 
     # Plotting
     plt.clf()  # Clear the current figure
-    plt.figure(figsize=(3.125, 2.5), dpi=300)
+    plt.figure(figsize=(6.25, 5), dpi=300)
     axp = plt.gca()
     set_custom_axes_style(axp)  # Ensure you have defined this function
     plt.scatter(logz, logrou, label='Data', color='blue', s=10)
