@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculation Result</title>
+</head>
+<body>
+    <h1>Calculation Result</h1>
+    <h2>Eiso-z Plot</h2>
+    <img src="{{ image_path1 }}" alt="Eiso-z Plot">
+    <a href="/download/{{ image_path1.split('/')[-1] }}">Download Eiso-z Plot</a>
+
+    <h2>K-TAU Plot</h2>
+    <img src="{{ image_path2 }}" alt="K-TAU Plot">
+    <a href="/download/{{ image_path2.split('/')[-1] }}">Download K-TAU Plot</a>
+
+    <h3>Calculated K_fix: {{ K_fix }}</h3>
+    <h3>Calculated T_fix: {{ T_fix }}</h3>
+    
+
+    <h2>CumulativeE Plot</h2>
+    <img src="{{ image_path3 }}" alt="CumulativeE Plot">
+    <a href="/download/{{ image_path3.split('/')[-1] }}">Download CumulativeE Plot</a>
+
+    <h2>CumulativeZ Plot</h2>
+    <img src="{{ image_path4 }}" alt="CumulativeZ Plot">
+    <a href="/download/{{ image_path4.split('/')[-1] }}">Download CumulativeZ Plot</a>
+
+    <h2>Rate Plot</h2>
+    <img src="{{ image_path5 }}" alt="Rate Plot">
+    <a href="/download/{{ image_path5.split('/')[-1] }}">Download Rate Plot</a>
+
+    <h2>Rate Fit Plot</h2>
+    <img src="{{ image_path6 }}" alt="Rate Plot">
+    <a href="/download/{{ image_path6.split('/')[-1] }}">Download Rate Fit Plot</a>
+
+    <h3>PL FIT INDEX: {{ PL_FIT_INDEX }}</h3>
+    <h3>PL FIT INDEX: {{ PL_FIT_INDEX_ERROR }}</h3>
+
+    
+</body>
+</html>
