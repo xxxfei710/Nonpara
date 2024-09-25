@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application of the Non-Parametric Method to FRB</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            font-weight: 500;
+            margin-bottom: 30px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .form-group label {
+            font-weight: 500;
+        }
+
+        .form-control {
+            border-radius: 30px;
+            padding: 15px;
+        }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            font-size: 18px;
+            border-radius: 30px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .form-control-file {
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1>Input Parameters</h1>
+        <form action="/calculate" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="OM">Matter density (Omega M):</label>
+                <input type="text" class="form-control" name="OM" value="0.286" required>
+            </div>
+            <div class="form-group">
+                <label for="OA">Dark energy density (Omega Lambda):</label>
+                <input type="text" class="form-control" name="OA" value="0.714" required>
+            </div>
+            <div class="form-group">
+                <label for="H0">Hubble constant (H0, m/s/Mpc):</label>
+                <input type="text" class="form-control" name="H0" value="69600" required>
+            </div>
+            <div class="form-group">
+                <label for="c">Speed of light (c, m/s):</label>
+                <input type="text" class="form-control" name="c" value="300000000" required>
+            </div>
+            <div class="form-group">
+                <label for="Flim">Flux cut (Flim, Jy ms):</label>
+                <input type="text" class="form-control" name="Flim" value="0.4" required>
+            </div>
+            <div class="form-group">
+                <label for="Ndata">Data number (Ndata):</label>
+                <input type="number" class="form-control" name="Ndata" value="447" required>
+            </div>
+            <div class="form-group">
+                <label for="kstart">The starting value of k:</label>
+                <input type="text" class="form-control" name="kstart" value="5" required>
+            </div>
+            <div class="form-group">
+                <label for="kend">The ending value of k:</label>
+                <input type="text" class="form-control" name="kend" value="6" required>
+            </div>
+            <div class="form-group">
+                <label for="year">years:</label>
+                <input type="text" class="form-control" name="year" value="6.25" required>
+            </div>
+            <div class="form-group">
+                <label for="data_file">Upload data files (z, Eiso):</label>
+                <input type="file" class="form-control-file" name="data_file" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Calculate</button>
+        </form>
+    </div>
+</body>
+
+</html>
