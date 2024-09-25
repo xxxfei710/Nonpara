@@ -1,5 +1,4 @@
 # Nonpara
-########################################################
 We attempted to create an interactive interface to implement the application of nonparametric methods in calculating fast radio burst energy functions and event rates.
 ########################################################
 1. How to use?
