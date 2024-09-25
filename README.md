@@ -1,6 +1,6 @@
 # Nonpara
 We attempted to create an interactive interface to implement the application of nonparametric methods in calculating fast radio burst energy functions and event rates.
-########################################################
+
 1. How to use?
    (1) Download all files in this repository and save them locally.
    (2) Make sure to install the modules that satisfy requirements.txt.
@@ -8,7 +8,6 @@ We attempted to create an interactive interface to implement the application of 
    (4) Fill in the corresponding parameters and upload the required txt files.
    (5) Click ``Calculate''.
 
-##########################################################
 
 2. Page Instructions.
    (1) According to Dong et al. 2024, we set the default initial values ​​of the parameters for the 447 non-repeating FRB examples in the article.
@@ -18,7 +17,6 @@ We attempted to create an interactive interface to implement the application of 
        Ensure that the number of data in the uploaded file corresponds to the number of samples.
    (3) We have set up a setting to allow downloading of corresponding plots, you can choose according to your needs.
 
-##############################################################
 
 3. Note.
    (1) The nonparametric method used here is based on Lynden-Bell 1971 and Efron & Petrosian 1992.
