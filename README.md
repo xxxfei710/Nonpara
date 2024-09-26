@@ -5,7 +5,7 @@ We attempted to create an interactive interface to implement the application of 
    (1) Download all files in this repository and save them locally.
    (2) Make sure to install the modules that satisfy requirements.txt.
    (3) Open the terminal in the local folder and run the command >>python app.py.
-   (4) Fill in the corresponding parameters and upload the required txt files.
+   (4) Fill in the corresponding parameters and upload the required data.txt files.
    (5) Click ``Calculate''.
 
 
